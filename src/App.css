@@ -7,13 +7,28 @@ header ul li {
 }
 
 .bg-header {
-  background: hsla(225, 86%, 43%, 0.918);
+  background: hsla(264, 75%, 47%, 0.918);
+}
+.bg-about {
+  background: hwb(267 89% 3% / 0.918);
 }
 
 .nav-mobile {
-  @apply fixed top-20 left-0 bg-gray-400 w-full h-1/4;
+  @apply fixed top-20 left-0 bg-gray-600 w-full h-1/4;
 }
 
 .nav-mobile li {
   @apply h-full border-b-2;
+}
+
+.project-description {
+  @apply absolute left-0 right-0 bottom-0 top-0 bg-violet-800 text-white opacity-0 duration-500 hover:opacity-100;
+}
+
+.btn {
+  @apply bg-violet-500 px-5 py-2 font-bold hover:border-2 border-orange-500 rounded;
+}
+
+html {
+  scroll-behavior: smooth;
 }
